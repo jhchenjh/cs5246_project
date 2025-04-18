@@ -73,7 +73,7 @@ def simplify_word(word, sentence, pos_tag, original_embedding, threshold=1e-5):
 
 def simplify_sentence(sentence):
     doc = nlp(sentence)
-    tokens = [token.text for token in doc]  # 使用 spaCy 的 token 来初始化 tokens
+    tokens = [token.text for token in doc] 
     for i, token in enumerate(doc):
         if not token.is_alpha or token.is_stop:
             continue
@@ -91,4 +91,5 @@ def simplify_sentence(sentence):
 
 # Example usage:
 # text = "The professor elucidated the complex mechanism."
+# print(text)
 # print(simplify_sentence(text))
