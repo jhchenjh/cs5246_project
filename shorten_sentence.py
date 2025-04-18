@@ -168,7 +168,7 @@ def simplify_paragraph(paragraph):
     return results
 
 # Example use
-# paragraph = " N.P.R. is a radio station. Ms. Smith is a doctor and she is living at No.3 street. "
+# paragraph = " Ms. Smith is a doctor and she is living at No.3 street. "
 # simplified_sentences = simplify_paragraph(paragraph)
 # for s in simplified_sentences:
     # print(s)
